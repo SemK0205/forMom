@@ -6,7 +6,7 @@ function generateLottoNumbers() {
             numbers.add(Math.floor(Math.random() * 45) + 1);
         }
         let sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
-        result += `<div>게임 ${i + 1}: ` + sortedNumbers.map(num => `<span class="lotto-item">${num}</span>`).join(' ') + `</div>`;
+        result += `<div class="lotto-row">` + sortedNumbers.map(num => `<span class="lotto-item">${num}</span>`).join('') + `</div>`;
     }
     document.querySelector('.numbers').innerHTML = result;
 }

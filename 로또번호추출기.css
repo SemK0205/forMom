@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f9fa;
-    margin: 50px;
+    margin: 20px;
 }
 h1 {
     color: #333;
@@ -12,42 +12,52 @@ h1 {
     padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    width: 90%;
+    max-width: 400px;
 }
 .numbers {
     font-size: 22px;
     font-weight: bold;
     margin: 20px 0;
-    text-align: center;
-    line-height: 1.8;
-    padding: 10px;
-    background: #e9ecef;
-    border-radius: 8px;
-    display: inline-block;
-}
-.lotto-item {
-    display: inline-block;
-    background: #ffc107;
+    padding: 15px;
+    background: #A7C7E7; /* 파스텔톤 블루 */
     color: #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lotto-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     padding: 10px;
-    margin: 5px;
+}
+.lotto-number {
+    background: white;
+    color: #5D7B9D; /* 부드러운 블루 계열 */
+    padding: 10px;
     border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
     width: 40px;
     height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .message {
     margin-top: 15px;
     font-size: 18px;
-    color: #007bff;
+    color: #5D7B9D;
     font-weight: bold;
 }
 button {
-    background-color: #28a745;
+    background-color: #77DD77; /* 파스텔톤 그린 */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -56,5 +66,5 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #218838;
+    background-color: #66CDAA; /* 살짝 어두운 파스텔톤 그린 */
 }
